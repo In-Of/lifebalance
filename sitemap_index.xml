@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://in-of.github.io/lifebalance/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://lifebalance.ru/wp-content/plugins/wordpress-seo/css/main-sitemap.xsl"?>
 <sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 	<sitemap>
-		<loc>https://in-of.github.io/lifebalance/post-sitemap.xml</loc>
-		<lastmod>2025-06-10T19:18:08+00:00</lastmod>
+		<loc>https://lifebalance.ru/post-sitemap.xml</loc>
+		<lastmod>2025-06-11T06:21:56+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://in-of.github.io/lifebalance/category-sitemap.xml</loc>
-		<lastmod>2025-06-10T19:18:08+00:00</lastmod>
+		<loc>https://lifebalance.ru/category-sitemap.xml</loc>
+		<lastmod>2025-06-11T06:21:56+00:00</lastmod>
 	</sitemap>
 	<sitemap>
-		<loc>https://in-of.github.io/lifebalance/author-sitemap.xml</loc>
+		<loc>https://lifebalance.ru/author-sitemap.xml</loc>
 		<lastmod>2025-06-10T16:14:16+00:00</lastmod>
 	</sitemap>
 </sitemapindex>
