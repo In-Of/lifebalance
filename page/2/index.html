@@ -168,15 +168,64 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 .single .featured-image.page-header-image-single {
     display: none !important;
-}</style>
+}
+
+/* Убираем лишние поля у блока с соцсетями */
+#custom_html-3,
+#custom_html-3 .custom-html-widget,
+#custom_html-3 .social-widget {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Сжать отступы между иконками */
+#custom_html-3 .social-widget a {
+    margin: 0 8px 0 0 !important;
+    padding: 0 !important;
+}
+
+#custom_html-3 .social-widget {
+    background: #fafbfc;
+    border-radius: 8px;
+    padding: 8px 0;
+    display: flex;
+    justify-content: flex-start; /* или center */
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* Поменять местами картинку и лого
+
+.site-branding-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Поменять местами: сначала .site-branding, потом .site-logo 
+.site-branding {
+    order: 1;
+}
+.site-logo {
+    order: 2;
+}
+
+/* (Не обязательно) Отступ между названием и картинкой
+.site-logo {
+    margin-left: 16px;
+}
+* /</style>
 		</head>
 
-<body class="home blog paged wp-custom-logo wp-embed-responsive paged-2 wp-theme-generatepress right-sidebar nav-float-right separate-containers header-aligned-center dropdown-hover" itemtype="https://schema.org/Blog" itemscope>
+<body class="home blog paged wp-custom-logo wp-embed-responsive paged-2 wp-theme-generatepress right-sidebar nav-float-right separate-containers header-aligned-left dropdown-hover" itemtype="https://schema.org/Blog" itemscope>
 	<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>		<header class="site-header has-inline-mobile-toggle" id="masthead" aria-label="Site" itemtype="https://schema.org/WPHeader" itemscope>
 			<div class="inside-header grid-container">
 				<div class="site-logo">
 					<a href="https://lifebalance.ru/" rel="home">
-						<img class="header-image is-logo-image" alt="LifeBalance" src="https://lifebalance.ru/wp-content/uploads/2025/06/cropped-header.jpg" width="1300" height="121">
+						<img class="header-image is-logo-image" alt="LifeBalance" src="https://lifebalance.ru/wp-content/uploads/2025/06/cropped-header-1.jpg" width="1183" height="127">
 					</a>
 				</div>	<nav class="main-navigation mobile-menu-control-wrapper" id="mobile-menu-control-wrapper" aria-label="Mobile Toggle">
 				<button data-nav="site-navigation" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
@@ -208,7 +257,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Vincent Tolman: &#8230; Именно тогда он подвел меня к следующему принципу — пятому, — который заключается в ответственном использовании технологий. Он не показал мне это напрямую, но я узнал об этом позже. Технологии созданы для замены наших глаз. Не случайно Siri назвали именно так &#8212; это слово “Iris” (радужная оболочка глаза), написанное задом наперед. iPhone &#8230; <a title="Ответственно используйте технологии" class="read-more" href="https://lifebalance.ru/%d0%be%d1%82%d0%b2%d0%b5%d1%82%d1%81%d1%82%d0%b2%d0%b5%d0%bd%d0%bd%d0%be-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d1%83%d0%b9%d1%82%d0%b5-%d1%82%d0%b5%d1%85%d0%bd%d0%be%d0%bb%d0%be%d0%b3%d0%b8%d0%b8/" aria-label="Read more about Ответственно используйте технологии">Read more</a></p>
+				<p>Vincent Tolman: &#8230; Именно тогда он подвел меня к следующему принципу — пятому, — который заключается в ответственном использовании технологий. Он не показал мне это напрямую, но я узнал об этом позже. Технологии созданы для замены наших глаз. Не случайно Siri назвали именно так &#8212; это слово “Iris” (радужная оболочка глаза), написанное задом наперед. iPhone &#8230; <a title="Ответственно используйте технологии" class="read-more" href="https://lifebalance.ru/%d0%be%d1%82%d0%b2%d0%b5%d1%82%d1%81%d1%82%d0%b2%d0%b5%d0%bd%d0%bd%d0%be-%d0%b8%d1%81%d0%bf%d0%be%d0%bb%d1%8c%d0%b7%d1%83%d0%b9%d1%82%d0%b5-%d1%82%d0%b5%d1%85%d0%bd%d0%be%d0%bb%d0%be%d0%b3%d0%b8%d0%b8/" aria-label="Read more about Ответственно используйте технологии">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -238,7 +287,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>История миротворческих проектов На сегодня сила временных миротворческих акций наблюдалась и всесторонне тестировалась в ходе более чем 50 проектов и 23 научных исследований с участием независимых экспертов, по всему миру. Результаты последовательно демонстрируют положительный эффект в виде немедленного сокращения преступности, военных действий и терроризма в среднем более чем на 70 процентов. Только задумайтесь об этом. &#8230; <a title="История миротворческих проектов (Джо Диспенза &#171;Сверъестественный разум&#187;)" class="read-more" href="https://lifebalance.ru/%d0%b8%d1%81%d1%82%d0%be%d1%80%d0%b8%d1%8f-%d0%bc%d0%b8%d1%80%d0%be%d1%82%d0%b2%d0%be%d1%80%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d1%85-%d0%bf%d1%80%d0%be%d0%b5%d0%ba%d1%82%d0%be%d0%b2-%d0%b4%d0%b6%d0%be/" aria-label="Read more about История миротворческих проектов (Джо Диспенза &#171;Сверъестественный разум&#187;)">Read more</a></p>
+				<p>История миротворческих проектов На сегодня сила временных миротворческих акций наблюдалась и всесторонне тестировалась в ходе более чем 50 проектов и 23 научных исследований с участием независимых экспертов, по всему миру. Результаты последовательно демонстрируют положительный эффект в виде немедленного сокращения преступности, военных действий и терроризма в среднем более чем на 70 процентов. Только задумайтесь об этом. &#8230; <a title="История миротворческих проектов (Джо Диспенза &#171;Сверъестественный разум&#187;)" class="read-more" href="https://lifebalance.ru/%d0%b8%d1%81%d1%82%d0%be%d1%80%d0%b8%d1%8f-%d0%bc%d0%b8%d1%80%d0%be%d1%82%d0%b2%d0%be%d1%80%d1%87%d0%b5%d1%81%d0%ba%d0%b8%d1%85-%d0%bf%d1%80%d0%be%d0%b5%d0%ba%d1%82%d0%be%d0%b2-%d0%b4%d0%b6%d0%be/" aria-label="Read more about История миротворческих проектов (Джо Диспенза &#171;Сверъестественный разум&#187;)">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -253,7 +302,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Автор: Гэри РенардИсточник Я хочу поделиться несколькими полезными идеями о том, как уменьшить влияние эго (мысль об отделённости от Источника и мысль о том, что мы отдельные живые существа) и вернуться в истинную реальность, которая и есть Источник всего. Я надеюсь, вы сможете применить эти действенные инструменты для того, чтобы вернуться в вашу истинную вечную &#8230; <a title="3 простых способа уменьшить своё эго" class="read-more" href="https://lifebalance.ru/3-%d0%bf%d1%80%d0%be%d1%81%d1%82%d1%8b%d1%85-%d1%81%d0%bf%d0%be%d1%81%d0%be%d0%b1%d0%b0-%d1%83%d0%bc%d0%b5%d0%bd%d1%8c%d1%88%d0%b8%d1%82%d1%8c-%d1%81%d0%b2%d0%be%d1%91-%d1%8d%d0%b3%d0%be/" aria-label="Read more about 3 простых способа уменьшить своё эго">Read more</a></p>
+				<p>Автор: Гэри РенардИсточник Я хочу поделиться несколькими полезными идеями о том, как уменьшить влияние эго (мысль об отделённости от Источника и мысль о том, что мы отдельные живые существа) и вернуться в истинную реальность, которая и есть Источник всего. Я надеюсь, вы сможете применить эти действенные инструменты для того, чтобы вернуться в вашу истинную вечную &#8230; <a title="3 простых способа уменьшить своё эго" class="read-more" href="https://lifebalance.ru/3-%d0%bf%d1%80%d0%be%d1%81%d1%82%d1%8b%d1%85-%d1%81%d0%bf%d0%be%d1%81%d0%be%d0%b1%d0%b0-%d1%83%d0%bc%d0%b5%d0%bd%d1%8c%d1%88%d0%b8%d1%82%d1%8c-%d1%81%d0%b2%d0%be%d1%91-%d1%8d%d0%b3%d0%be/" aria-label="Read more about 3 простых способа уменьшить своё эго">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -268,7 +317,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Автор: MARK MANSON Источник:&nbsp;https://markmanson.net/life-purpose В день, когда моему брату исполнилось 18 лет, он влетел в гостиную и с гордостью объявил мне и моей матери, что однажды он станет сенатором. Моя мама, вероятно, выдала ему что-то вроде: «Замечательно, дорогой», в тот момент, я уверен, я был увлечён чашкой Cheerios или чем-то в этом роде. Но в &#8230; <a title="7 странных вопросов, которые помогут вам найти смысл, предназначение и цель в жизни." class="read-more" href="https://lifebalance.ru/7-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%bd%d1%8b%d1%85-%d0%b2%d0%be%d0%bf%d1%80%d0%be%d1%81%d0%be%d0%b2-%d0%ba%d0%be%d1%82%d0%be%d1%80%d1%8b%d0%b5-%d0%bf%d0%be%d0%bc%d0%be%d0%b3%d1%83%d1%82-%d0%b2%d0%b0/" aria-label="Read more about 7 странных вопросов, которые помогут вам найти смысл, предназначение и цель в жизни.">Read more</a></p>
+				<p>Автор: MARK MANSON Источник:&nbsp;https://markmanson.net/life-purpose В день, когда моему брату исполнилось 18 лет, он влетел в гостиную и с гордостью объявил мне и моей матери, что однажды он станет сенатором. Моя мама, вероятно, выдала ему что-то вроде: «Замечательно, дорогой», в тот момент, я уверен, я был увлечён чашкой Cheerios или чем-то в этом роде. Но в &#8230; <a title="7 странных вопросов, которые помогут вам найти смысл, предназначение и цель в жизни." class="read-more" href="https://lifebalance.ru/7-%d1%81%d1%82%d1%80%d0%b0%d0%bd%d0%bd%d1%8b%d1%85-%d0%b2%d0%be%d0%bf%d1%80%d0%be%d1%81%d0%be%d0%b2-%d0%ba%d0%be%d1%82%d0%be%d1%80%d1%8b%d0%b5-%d0%bf%d0%be%d0%bc%d0%be%d0%b3%d1%83%d1%82-%d0%b2%d0%b0/" aria-label="Read more about 7 странных вопросов, которые помогут вам найти смысл, предназначение и цель в жизни.">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -283,7 +332,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Даг Холл &nbsp; Даг Холл &nbsp; &nbsp;&nbsp;&nbsp;В интересной, остроумной, а порой и парадоксальной книге американского предпринимателя Дага Холла читателю предлагаются методы, которые помогут ему мыслить и действовать быстрее, лучше, эффективнее. Книга дает оригинальные и неожиданные ответы на повседневные вопросы, помогает нам с помощью простых и доступных методик полнее раскрыть свой творческий потенциал, найти пути для &#8230; <a title="Даг Холл. Стань первым!" class="read-more" href="https://lifebalance.ru/%d0%b4%d0%b0%d0%b3-%d1%85%d0%be%d0%bb%d0%bb-%d1%81%d1%82%d0%b0%d0%bd%d1%8c-%d0%bf%d0%b5%d1%80%d0%b2%d1%8b%d0%bc/" aria-label="Read more about Даг Холл. Стань первым!">Read more</a></p>
+				<p>Даг Холл &nbsp; Даг Холл &nbsp; &nbsp;&nbsp;&nbsp;В интересной, остроумной, а порой и парадоксальной книге американского предпринимателя Дага Холла читателю предлагаются методы, которые помогут ему мыслить и действовать быстрее, лучше, эффективнее. Книга дает оригинальные и неожиданные ответы на повседневные вопросы, помогает нам с помощью простых и доступных методик полнее раскрыть свой творческий потенциал, найти пути для &#8230; <a title="Даг Холл. Стань первым!" class="read-more" href="https://lifebalance.ru/%d0%b4%d0%b0%d0%b3-%d1%85%d0%be%d0%bb%d0%bb-%d1%81%d1%82%d0%b0%d0%bd%d1%8c-%d0%bf%d0%b5%d1%80%d0%b2%d1%8b%d0%bc/" aria-label="Read more about Даг Холл. Стань первым!">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -298,7 +347,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Вы могли видеть этого человека на улице Красной в Краснодаре по выходным. Его можно встретить на побережье Чёрного моря. Зовут его Давид (Шторм) Картвелишвили. Он участвовал в шоу &#171;Вечерний Ургант&#187; и &#171;Минута славы&#187;. Давид рассказывает о себе и делится секретами в видео. Вы могли видеть этого человека на улице Красной в Краснодаре по выходным. Его &#8230; <a title="Давид Шторм и сладкая вата (видео)" class="read-more" href="https://lifebalance.ru/%d0%b4%d0%b0%d0%b2%d0%b8%d0%b4-%d1%88%d1%82%d0%be%d1%80%d0%bc-%d0%b8-%d1%81%d0%bb%d0%b0%d0%b4%d0%ba%d0%b0%d1%8f-%d0%b2%d0%b0%d1%82%d0%b0-%d0%b2%d0%b8%d0%b4%d0%b5%d0%be/" aria-label="Read more about Давид Шторм и сладкая вата (видео)">Read more</a></p>
+				<p>Вы могли видеть этого человека на улице Красной в Краснодаре по выходным. Его можно встретить на побережье Чёрного моря. Зовут его Давид (Шторм) Картвелишвили. Он участвовал в шоу &#171;Вечерний Ургант&#187; и &#171;Минута славы&#187;. Давид рассказывает о себе и делится секретами в видео. Вы могли видеть этого человека на улице Красной в Краснодаре по выходным. Его &#8230; <a title="Давид Шторм и сладкая вата (видео)" class="read-more" href="https://lifebalance.ru/%d0%b4%d0%b0%d0%b2%d0%b8%d0%b4-%d1%88%d1%82%d0%be%d1%80%d0%bc-%d0%b8-%d1%81%d0%bb%d0%b0%d0%b4%d0%ba%d0%b0%d1%8f-%d0%b2%d0%b0%d1%82%d0%b0-%d0%b2%d0%b8%d0%b4%d0%b5%d0%be/" aria-label="Read more about Давид Шторм и сладкая вата (видео)">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -313,7 +362,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Путь художника. Ваша творческая мастерская Д. Кэмерон Книга &#171;Путь художника&#187; за 10 лет своего существования изменила жизни более миллиона людей, а именно &#8212; их отношение к собственным креативным способностям, и помогла им реализовать свои мечты о творчестве. Джулия Кэмерон, знаменитая в богемных кругах США как выдающийся консультант по раскрытию творческих способностей человека, считает, что креативность &#8230; <a title="Путь художника" class="read-more" href="https://lifebalance.ru/%d0%bf%d1%83%d1%82%d1%8c-%d1%85%d1%83%d0%b4%d0%be%d0%b6%d0%bd%d0%b8%d0%ba%d0%b0/" aria-label="Read more about Путь художника">Read more</a></p>
+				<p>Путь художника. Ваша творческая мастерская Д. Кэмерон Книга &#171;Путь художника&#187; за 10 лет своего существования изменила жизни более миллиона людей, а именно &#8212; их отношение к собственным креативным способностям, и помогла им реализовать свои мечты о творчестве. Джулия Кэмерон, знаменитая в богемных кругах США как выдающийся консультант по раскрытию творческих способностей человека, считает, что креативность &#8230; <a title="Путь художника" class="read-more" href="https://lifebalance.ru/%d0%bf%d1%83%d1%82%d1%8c-%d1%85%d1%83%d0%b4%d0%be%d0%b6%d0%bd%d0%b8%d0%ba%d0%b0/" aria-label="Read more about Путь художника">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -328,7 +377,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Непроторенная дорога. Новая психология любви и духовного роста Скотт Пек Простым, общедоступным языком автор раскрывает тончайшие секреты нашего повседневного бытия, человеческих отношений. От типичных историй болезни он поднимается к осмыслению таких фундаментальных понятий, как любовь, благодать, Бог. Эта дорога открыта для каждого мыслящего человека. Но она очень трудна &#8212; и потому заброшена. Немногие идут по &#8230; <a title="Непроторённая дорога" class="read-more" href="https://lifebalance.ru/%d0%bd%d0%b5%d0%bf%d1%80%d0%be%d1%82%d0%be%d1%80%d1%91%d0%bd%d0%bd%d0%b0%d1%8f-%d0%b4%d0%be%d1%80%d0%be%d0%b3%d0%b0/" aria-label="Read more about Непроторённая дорога">Read more</a></p>
+				<p>Непроторенная дорога. Новая психология любви и духовного роста Скотт Пек Простым, общедоступным языком автор раскрывает тончайшие секреты нашего повседневного бытия, человеческих отношений. От типичных историй болезни он поднимается к осмыслению таких фундаментальных понятий, как любовь, благодать, Бог. Эта дорога открыта для каждого мыслящего человека. Но она очень трудна &#8212; и потому заброшена. Немногие идут по &#8230; <a title="Непроторённая дорога" class="read-more" href="https://lifebalance.ru/%d0%bd%d0%b5%d0%bf%d1%80%d0%be%d1%82%d0%be%d1%80%d1%91%d0%bd%d0%bd%d0%b0%d1%8f-%d0%b4%d0%be%d1%80%d0%be%d0%b3%d0%b0/" aria-label="Read more about Непроторённая дорога">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -343,7 +392,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>О том, что привычка &#8212; &#171;замена счастию&#187;, знают все. Мы привычно ходим на скучную работу, привычно живем с ненужным человеком&#8230; Иногда приснится ночью то, о чем мечталось в юности, и просыпаешься на мокрой от слез подушке. Но ведь еще не поздно! Никогда не поздно все изменить, реализовать свои возможности, вспомнить о мечтах. Как это сделать? &#8230; <a title="Пять способов найти себя" class="read-more" href="https://lifebalance.ru/%d0%bf%d1%8f%d1%82%d1%8c-%d1%81%d0%bf%d0%be%d1%81%d0%be%d0%b1%d0%be%d0%b2-%d0%bd%d0%b0%d0%b9%d1%82%d0%b8-%d1%81%d0%b5%d0%b1%d1%8f/" aria-label="Read more about Пять способов найти себя">Read more</a></p>
+				<p>О том, что привычка &#8212; &#171;замена счастию&#187;, знают все. Мы привычно ходим на скучную работу, привычно живем с ненужным человеком&#8230; Иногда приснится ночью то, о чем мечталось в юности, и просыпаешься на мокрой от слез подушке. Но ведь еще не поздно! Никогда не поздно все изменить, реализовать свои возможности, вспомнить о мечтах. Как это сделать? &#8230; <a title="Пять способов найти себя" class="read-more" href="https://lifebalance.ru/%d0%bf%d1%8f%d1%82%d1%8c-%d1%81%d0%bf%d0%be%d1%81%d0%be%d0%b1%d0%be%d0%b2-%d0%bd%d0%b0%d0%b9%d1%82%d0%b8-%d1%81%d0%b5%d0%b1%d1%8f/" aria-label="Read more about Пять способов найти себя">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -371,7 +420,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 	<div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
 	<div class="inside-right-sidebar">
-		<aside id="block-3" class="widget inner-padding widget_block">
+		<aside id="custom_html-3" class="widget_text widget inner-padding widget_custom_html"><div class="textwidget custom-html-widget"><div class="social-widget">
+<a href="https://dzen.ru/lifebalance_ru" target="_blank" rel="noopener" title="Дзен">
+    <img src="https://dzen.ru/about/images/download//dzen-dark/dark-basic.svg" style="width:64px; height:64px; vertical-align:middle;"></a>
+	<a href="https://t.me/lifebalanceru" target="_blank" rel="noopener" title="Telegram">
+    <img src="https://lifebalance.ru/wp-content/uploads/2025/06/Telegram.png" alt="Telegram" style="width:63px; height:24px; vertical-align:middle;"></a>
+</div></div></aside><aside id="block-3" class="widget inner-padding widget_block">
 <div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
 <h2 class="wp-block-heading">Свежие записи</h2>
 

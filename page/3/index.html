@@ -168,15 +168,64 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 .single .featured-image.page-header-image-single {
     display: none !important;
-}</style>
+}
+
+/* Убираем лишние поля у блока с соцсетями */
+#custom_html-3,
+#custom_html-3 .custom-html-widget,
+#custom_html-3 .social-widget {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Сжать отступы между иконками */
+#custom_html-3 .social-widget a {
+    margin: 0 8px 0 0 !important;
+    padding: 0 !important;
+}
+
+#custom_html-3 .social-widget {
+    background: #fafbfc;
+    border-radius: 8px;
+    padding: 8px 0;
+    display: flex;
+    justify-content: flex-start; /* или center */
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* Поменять местами картинку и лого
+
+.site-branding-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Поменять местами: сначала .site-branding, потом .site-logo 
+.site-branding {
+    order: 1;
+}
+.site-logo {
+    order: 2;
+}
+
+/* (Не обязательно) Отступ между названием и картинкой
+.site-logo {
+    margin-left: 16px;
+}
+* /</style>
 		</head>
 
-<body class="home blog paged wp-custom-logo wp-embed-responsive paged-3 wp-theme-generatepress right-sidebar nav-float-right separate-containers header-aligned-center dropdown-hover" itemtype="https://schema.org/Blog" itemscope>
+<body class="home blog paged wp-custom-logo wp-embed-responsive paged-3 wp-theme-generatepress right-sidebar nav-float-right separate-containers header-aligned-left dropdown-hover" itemtype="https://schema.org/Blog" itemscope>
 	<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>		<header class="site-header has-inline-mobile-toggle" id="masthead" aria-label="Site" itemtype="https://schema.org/WPHeader" itemscope>
 			<div class="inside-header grid-container">
 				<div class="site-logo">
 					<a href="https://lifebalance.ru/" rel="home">
-						<img class="header-image is-logo-image" alt="LifeBalance" src="https://lifebalance.ru/wp-content/uploads/2025/06/cropped-header.jpg" width="1300" height="121">
+						<img class="header-image is-logo-image" alt="LifeBalance" src="https://lifebalance.ru/wp-content/uploads/2025/06/cropped-header-1.jpg" width="1183" height="127">
 					</a>
 				</div>	<nav class="main-navigation mobile-menu-control-wrapper" id="mobile-menu-control-wrapper" aria-label="Mobile Toggle">
 				<button data-nav="site-navigation" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
@@ -208,7 +257,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>&#171;50 вещей, которые убил Интернет&#187; — так называлась статья в газете The Daily Telegraph, поразившая британскую аудиторию — несколько сотен комментариев и писем к одной статье. Действительно, наша жизнь с приходом Интернета и цифровых технологий изменилась, видимо, к лучшему: покупать удобнее в Интернет-магазинах, удобно иметь под рукой всю нужную информацию, очень важно иметь возможность быстро &#8230; <a title="50 вещей, которые убил Интернет" class="read-more" href="https://lifebalance.ru/50-%d0%b2%d0%b5%d1%89%d0%b5%d0%b9-%d0%ba%d0%be%d1%82%d0%be%d1%80%d1%8b%d0%b5-%d1%83%d0%b1%d0%b8%d0%bb-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d0%bd%d0%b5%d1%82/" aria-label="Read more about 50 вещей, которые убил Интернет">Read more</a></p>
+				<p>&#171;50 вещей, которые убил Интернет&#187; — так называлась статья в газете The Daily Telegraph, поразившая британскую аудиторию — несколько сотен комментариев и писем к одной статье. Действительно, наша жизнь с приходом Интернета и цифровых технологий изменилась, видимо, к лучшему: покупать удобнее в Интернет-магазинах, удобно иметь под рукой всю нужную информацию, очень важно иметь возможность быстро &#8230; <a title="50 вещей, которые убил Интернет" class="read-more" href="https://lifebalance.ru/50-%d0%b2%d0%b5%d1%89%d0%b5%d0%b9-%d0%ba%d0%be%d1%82%d0%be%d1%80%d1%8b%d0%b5-%d1%83%d0%b1%d0%b8%d0%bb-%d0%b8%d0%bd%d1%82%d0%b5%d1%80%d0%bd%d0%b5%d1%82/" aria-label="Read more about 50 вещей, которые убил Интернет">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -223,7 +272,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Холодным январским утром 12 января 2007 в подземном переходе станции метро LEnfant Plaza Вашингтона расположился мужчина и начал игру на скрипке. На протяжении 45 минут он сыграл 6 произведений (Бах, Крейслер, Шуберт, Массне). За это время – в самый разгар часа пик, мимо него прошло более тысячи человек, большинство из которых направлялись на работу. По &#8230; <a title="Суета повседневности: не потерять главное" class="read-more" href="https://lifebalance.ru/%d1%81%d1%83%d0%b5%d1%82%d0%b0-%d0%bf%d0%be%d0%b2%d1%81%d0%b5%d0%b4%d0%bd%d0%b5%d0%b2%d0%bd%d0%be%d1%81%d1%82%d0%b8-%d0%bd%d0%b5-%d0%bf%d0%be%d1%82%d0%b5%d1%80%d1%8f%d1%82%d1%8c-%d0%b3%d0%bb%d0%b0/" aria-label="Read more about Суета повседневности: не потерять главное">Read more</a></p>
+				<p>Холодным январским утром 12 января 2007 в подземном переходе станции метро LEnfant Plaza Вашингтона расположился мужчина и начал игру на скрипке. На протяжении 45 минут он сыграл 6 произведений (Бах, Крейслер, Шуберт, Массне). За это время – в самый разгар часа пик, мимо него прошло более тысячи человек, большинство из которых направлялись на работу. По &#8230; <a title="Суета повседневности: не потерять главное" class="read-more" href="https://lifebalance.ru/%d1%81%d1%83%d0%b5%d1%82%d0%b0-%d0%bf%d0%be%d0%b2%d1%81%d0%b5%d0%b4%d0%bd%d0%b5%d0%b2%d0%bd%d0%be%d1%81%d1%82%d0%b8-%d0%bd%d0%b5-%d0%bf%d0%be%d1%82%d0%b5%d1%80%d1%8f%d1%82%d1%8c-%d0%b3%d0%bb%d0%b0/" aria-label="Read more about Суета повседневности: не потерять главное">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -238,7 +287,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Если нас хоть немного интересует какая-то тема, что у нас уже есть явные преимущества перед другими: &#8212; мы знаем больше обычного в этой теме, &#8212; мы готовы работать больше обычного времени в этой области, &#8212; нам интересно узнавать больше и мы готовы учиться. Но, если вы боитесь работать над выбранной вами темой около полугода без &#8230; <a title="Делай то, что любишь!" class="read-more" href="https://lifebalance.ru/%d0%b4%d0%b5%d0%bb%d0%b0%d0%b9-%d1%82%d0%be-%d1%87%d1%82%d0%be-%d0%bb%d1%8e%d0%b1%d0%b8%d1%88%d1%8c/" aria-label="Read more about Делай то, что любишь!">Read more</a></p>
+				<p>Если нас хоть немного интересует какая-то тема, что у нас уже есть явные преимущества перед другими: &#8212; мы знаем больше обычного в этой теме, &#8212; мы готовы работать больше обычного времени в этой области, &#8212; нам интересно узнавать больше и мы готовы учиться. Но, если вы боитесь работать над выбранной вами темой около полугода без &#8230; <a title="Делай то, что любишь!" class="read-more" href="https://lifebalance.ru/%d0%b4%d0%b5%d0%bb%d0%b0%d0%b9-%d1%82%d0%be-%d1%87%d1%82%d0%be-%d0%bb%d1%8e%d0%b1%d0%b8%d1%88%d1%8c/" aria-label="Read more about Делай то, что любишь!">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -253,7 +302,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Если у человека нет целей в жизни, которые бы его мотивировали, помогали бы ему развиваться и жить полноценно и интересно, то пустое место быстро заполняется целями чужими. Массированная реклама потребительского образа жизни, корпоративные ценности, кредиты и ипотеки немедленно и четко дают рекомендацию к действию, рисуют идеальную модель жизни. Настоящее счастье Если у человека нет целей &#8230; <a title="Настоящее счастье" class="read-more" href="https://lifebalance.ru/%d0%bd%d0%b0%d1%81%d1%82%d0%be%d1%8f%d1%89%d0%b5%d0%b5-%d1%81%d1%87%d0%b0%d1%81%d1%82%d1%8c%d0%b5/" aria-label="Read more about Настоящее счастье">Read more</a></p>
+				<p>Если у человека нет целей в жизни, которые бы его мотивировали, помогали бы ему развиваться и жить полноценно и интересно, то пустое место быстро заполняется целями чужими. Массированная реклама потребительского образа жизни, корпоративные ценности, кредиты и ипотеки немедленно и четко дают рекомендацию к действию, рисуют идеальную модель жизни. Настоящее счастье Если у человека нет целей &#8230; <a title="Настоящее счастье" class="read-more" href="https://lifebalance.ru/%d0%bd%d0%b0%d1%81%d1%82%d0%be%d1%8f%d1%89%d0%b5%d0%b5-%d1%81%d1%87%d0%b0%d1%81%d1%82%d1%8c%d0%b5/" aria-label="Read more about Настоящее счастье">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -268,7 +317,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Многие из нас не представляют себе счастья без финансового благополучия. Квартира, дача, машина&#8230; Но на все это надо заработать! Лучшие годы уходят на то, чтобы приобрести материальные блага, а сама жизнь уходит. «Подсознательно мы соревнуемся с окружающими: большинству из нас надо, чтобы все было «как у людей», &#8212; утверждает психолог Андрей Буцкин. Но жизнь-то проходит! &#8230; <a title="Жизнь &quot;как у людей&quot;" class="read-more" href="https://lifebalance.ru/%d0%b6%d0%b8%d0%b7%d0%bd%d1%8c-%d0%ba%d0%b0%d0%ba-%d1%83-%d0%bb%d1%8e%d0%b4%d0%b5%d0%b9/" aria-label="Read more about Жизнь &quot;как у людей&quot;">Read more</a></p>
+				<p>Многие из нас не представляют себе счастья без финансового благополучия. Квартира, дача, машина&#8230; Но на все это надо заработать! Лучшие годы уходят на то, чтобы приобрести материальные блага, а сама жизнь уходит. «Подсознательно мы соревнуемся с окружающими: большинству из нас надо, чтобы все было «как у людей», &#8212; утверждает психолог Андрей Буцкин. Но жизнь-то проходит! &#8230; <a title="Жизнь &quot;как у людей&quot;" class="read-more" href="https://lifebalance.ru/%d0%b6%d0%b8%d0%b7%d0%bd%d1%8c-%d0%ba%d0%b0%d0%ba-%d1%83-%d0%bb%d1%8e%d0%b4%d0%b5%d0%b9/" aria-label="Read more about Жизнь &quot;как у людей&quot;">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -283,7 +332,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Симптомы этого заболевания можно не заметить, этот недуг едва ли диагностирует среднестатистический терапевт в местной поликлинике, больничный из-за него не выпишут точно, а на работе за эту хворь еще и прозовут лентяем. Между тем синдром хронической усталости с каждым годом поражает все больше офисных сотрудников. Болею за делоКак избежать синдрома хронической усталости Симптомы этого заболевания &#8230; <a title="Болею за дело" class="read-more" href="https://lifebalance.ru/%d0%b1%d0%be%d0%bb%d0%b5%d1%8e-%d0%b7%d0%b0-%d0%b4%d0%b5%d0%bb%d0%be/" aria-label="Read more about Болею за дело">Read more</a></p>
+				<p>Симптомы этого заболевания можно не заметить, этот недуг едва ли диагностирует среднестатистический терапевт в местной поликлинике, больничный из-за него не выпишут точно, а на работе за эту хворь еще и прозовут лентяем. Между тем синдром хронической усталости с каждым годом поражает все больше офисных сотрудников. Болею за делоКак избежать синдрома хронической усталости Симптомы этого заболевания &#8230; <a title="Болею за дело" class="read-more" href="https://lifebalance.ru/%d0%b1%d0%be%d0%bb%d0%b5%d1%8e-%d0%b7%d0%b0-%d0%b4%d0%b5%d0%bb%d0%be/" aria-label="Read more about Болею за дело">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -298,7 +347,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Одна женщина (в данном случае её имя не важно) много лет работала в хосписе. Её обязанность &#8212; облегчение состояния умирающих пациентов. Таким образом, она буквально проводила с ними последние дни и часы. Из своих наблюдений она составила своеобразный рейтинг основных сожалений людей, подошедших к самому краю жизни. Одна женщина (в данном случае её имя не &#8230; <a title="5 самых распространённых сожалений умирающих" class="read-more" href="https://lifebalance.ru/5-%d1%81%d0%b0%d0%bc%d1%8b%d1%85-%d1%80%d0%b0%d1%81%d0%bf%d1%80%d0%be%d1%81%d1%82%d1%80%d0%b0%d0%bd%d1%91%d0%bd%d0%bd%d1%8b%d1%85-%d1%81%d0%be%d0%b6%d0%b0%d0%bb%d0%b5%d0%bd%d0%b8%d0%b9-%d1%83%d0%bc/" aria-label="Read more about 5 самых распространённых сожалений умирающих">Read more</a></p>
+				<p>Одна женщина (в данном случае её имя не важно) много лет работала в хосписе. Её обязанность &#8212; облегчение состояния умирающих пациентов. Таким образом, она буквально проводила с ними последние дни и часы. Из своих наблюдений она составила своеобразный рейтинг основных сожалений людей, подошедших к самому краю жизни. Одна женщина (в данном случае её имя не &#8230; <a title="5 самых распространённых сожалений умирающих" class="read-more" href="https://lifebalance.ru/5-%d1%81%d0%b0%d0%bc%d1%8b%d1%85-%d1%80%d0%b0%d1%81%d0%bf%d1%80%d0%be%d1%81%d1%82%d1%80%d0%b0%d0%bd%d1%91%d0%bd%d0%bd%d1%8b%d1%85-%d1%81%d0%be%d0%b6%d0%b0%d0%bb%d0%b5%d0%bd%d0%b8%d0%b9-%d1%83%d0%bc/" aria-label="Read more about 5 самых распространённых сожалений умирающих">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -313,7 +362,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Парадокс времени. Новая психология времени, которая улучшит вашу жизнь. Ф.Зимбардо, Д.Бойд Книга посвящена психологии времени &#8212; тому, как время управляет нами, и тому, как мы можем управлять им, исправляя свой вчерашний день, наслаждаясь днем сегодняшним и делая свое завтра таким, каким мы хотим его видеть. Книга будет интересна и для специалистов, и для широкого круга &#8230; <a title="Ф.Зимбардо. Парадокс времени" class="read-more" href="https://lifebalance.ru/%d1%84-%d0%b7%d0%b8%d0%bc%d0%b1%d0%b0%d1%80%d0%b4%d0%be-%d0%bf%d0%b0%d1%80%d0%b0%d0%b4%d0%be%d0%ba%d1%81-%d0%b2%d1%80%d0%b5%d0%bc%d0%b5%d0%bd%d0%b8/" aria-label="Read more about Ф.Зимбардо. Парадокс времени">Read more</a></p>
+				<p>Парадокс времени. Новая психология времени, которая улучшит вашу жизнь. Ф.Зимбардо, Д.Бойд Книга посвящена психологии времени &#8212; тому, как время управляет нами, и тому, как мы можем управлять им, исправляя свой вчерашний день, наслаждаясь днем сегодняшним и делая свое завтра таким, каким мы хотим его видеть. Книга будет интересна и для специалистов, и для широкого круга &#8230; <a title="Ф.Зимбардо. Парадокс времени" class="read-more" href="https://lifebalance.ru/%d1%84-%d0%b7%d0%b8%d0%bc%d0%b1%d0%b0%d1%80%d0%b4%d0%be-%d0%bf%d0%b0%d1%80%d0%b0%d0%b4%d0%be%d0%ba%d1%81-%d0%b2%d1%80%d0%b5%d0%bc%d0%b5%d0%bd%d0%b8/" aria-label="Read more about Ф.Зимбардо. Парадокс времени">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -328,7 +377,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Живите легко и просто! Э.Сент-Джеймс Жить легко и просто, без труда решая сложные проблемы, научит вас Элейн Сент-Джеймс, известная российскому читателю по нашумевшему бестселлеру «Будьте проще!». Эта книга для молодых и старых, мужчин и женщин, бедных и богатых&#8230; Попробуйте выкроить часок для чтения этой книги, — и вы узнаете, как сэкономить гораздо больше времени в &#8230; <a title="Живите легко и просто!" class="read-more" href="https://lifebalance.ru/%d0%b6%d0%b8%d0%b2%d0%b8%d1%82%d0%b5-%d0%bb%d0%b5%d0%b3%d0%ba%d0%be-%d0%b8-%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%be/" aria-label="Read more about Живите легко и просто!">Read more</a></p>
+				<p>Живите легко и просто! Э.Сент-Джеймс Жить легко и просто, без труда решая сложные проблемы, научит вас Элейн Сент-Джеймс, известная российскому читателю по нашумевшему бестселлеру «Будьте проще!». Эта книга для молодых и старых, мужчин и женщин, бедных и богатых&#8230; Попробуйте выкроить часок для чтения этой книги, — и вы узнаете, как сэкономить гораздо больше времени в &#8230; <a title="Живите легко и просто!" class="read-more" href="https://lifebalance.ru/%d0%b6%d0%b8%d0%b2%d0%b8%d1%82%d0%b5-%d0%bb%d0%b5%d0%b3%d0%ba%d0%be-%d0%b8-%d0%bf%d1%80%d0%be%d1%81%d1%82%d0%be/" aria-label="Read more about Живите легко и просто!">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -343,7 +392,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>&nbsp; Искусство продуктивности без стресса.&nbsp;(&quot;Getting Things Done&quot; The Art of Stress-free Productivity)Дэвид Аллен &nbsp; Искусство продуктивности без стресса.&nbsp;(&quot;Getting Things Done&quot; The Art of Stress-free Productivity)Дэвид Аллен Любому современному человеку катастрофически не хватает времени, и все жалуются на собственную неорганизованность &#8212; то забудешь о важном совещании, то опоздаешь, то вовремя не позвонишь по телефону. Из-за этого &#8230; <a title="Как привести дела в порядок" class="read-more" href="https://lifebalance.ru/%d0%ba%d0%b0%d0%ba-%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d1%81%d1%82%d0%b8-%d0%b4%d0%b5%d0%bb%d0%b0-%d0%b2-%d0%bf%d0%be%d1%80%d1%8f%d0%b4%d0%be%d0%ba/" aria-label="Read more about Как привести дела в порядок">Read more</a></p>
+				<p>&nbsp; Искусство продуктивности без стресса.&nbsp;(&quot;Getting Things Done&quot; The Art of Stress-free Productivity)Дэвид Аллен &nbsp; Искусство продуктивности без стресса.&nbsp;(&quot;Getting Things Done&quot; The Art of Stress-free Productivity)Дэвид Аллен Любому современному человеку катастрофически не хватает времени, и все жалуются на собственную неорганизованность &#8212; то забудешь о важном совещании, то опоздаешь, то вовремя не позвонишь по телефону. Из-за этого &#8230; <a title="Как привести дела в порядок" class="read-more" href="https://lifebalance.ru/%d0%ba%d0%b0%d0%ba-%d0%bf%d1%80%d0%b8%d0%b2%d0%b5%d1%81%d1%82%d0%b8-%d0%b4%d0%b5%d0%bb%d0%b0-%d0%b2-%d0%bf%d0%be%d1%80%d1%8f%d0%b4%d0%be%d0%ba/" aria-label="Read more about Как привести дела в порядок">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -371,7 +420,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 	<div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
 	<div class="inside-right-sidebar">
-		<aside id="block-3" class="widget inner-padding widget_block">
+		<aside id="custom_html-3" class="widget_text widget inner-padding widget_custom_html"><div class="textwidget custom-html-widget"><div class="social-widget">
+<a href="https://dzen.ru/lifebalance_ru" target="_blank" rel="noopener" title="Дзен">
+    <img src="https://dzen.ru/about/images/download//dzen-dark/dark-basic.svg" style="width:64px; height:64px; vertical-align:middle;"></a>
+	<a href="https://t.me/lifebalanceru" target="_blank" rel="noopener" title="Telegram">
+    <img src="https://lifebalance.ru/wp-content/uploads/2025/06/Telegram.png" alt="Telegram" style="width:63px; height:24px; vertical-align:middle;"></a>
+</div></div></aside><aside id="block-3" class="widget inner-padding widget_block">
 <div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
 <h2 class="wp-block-heading">Свежие записи</h2>
 

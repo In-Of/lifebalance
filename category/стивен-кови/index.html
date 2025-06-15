@@ -171,15 +171,64 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 .single .featured-image.page-header-image-single {
     display: none !important;
-}</style>
+}
+
+/* Убираем лишние поля у блока с соцсетями */
+#custom_html-3,
+#custom_html-3 .custom-html-widget,
+#custom_html-3 .social-widget {
+    padding: 0 !important;
+    margin: 0 !important;
+    background: none !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Сжать отступы между иконками */
+#custom_html-3 .social-widget a {
+    margin: 0 8px 0 0 !important;
+    padding: 0 !important;
+}
+
+#custom_html-3 .social-widget {
+    background: #fafbfc;
+    border-radius: 8px;
+    padding: 8px 0;
+    display: flex;
+    justify-content: flex-start; /* или center */
+    gap: 10px;
+    align-items: center;
+}
+
+
+/* Поменять местами картинку и лого
+
+.site-branding-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Поменять местами: сначала .site-branding, потом .site-logo 
+.site-branding {
+    order: 1;
+}
+.site-logo {
+    order: 2;
+}
+
+/* (Не обязательно) Отступ между названием и картинкой
+.site-logo {
+    margin-left: 16px;
+}
+* /</style>
 		</head>
 
-<body class="archive category category-25 wp-custom-logo wp-embed-responsive wp-theme-generatepress right-sidebar nav-float-right separate-containers header-aligned-center dropdown-hover" itemtype="https://schema.org/Blog" itemscope>
+<body class="archive category category-25 wp-custom-logo wp-embed-responsive wp-theme-generatepress right-sidebar nav-float-right separate-containers header-aligned-left dropdown-hover" itemtype="https://schema.org/Blog" itemscope>
 	<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>		<header class="site-header has-inline-mobile-toggle" id="masthead" aria-label="Site" itemtype="https://schema.org/WPHeader" itemscope>
 			<div class="inside-header grid-container">
 				<div class="site-logo">
 					<a href="https://lifebalance.ru/" rel="home">
-						<img class="header-image is-logo-image" alt="LifeBalance" src="https://lifebalance.ru/wp-content/uploads/2025/06/cropped-header.jpg" width="1300" height="121">
+						<img class="header-image is-logo-image" alt="LifeBalance" src="https://lifebalance.ru/wp-content/uploads/2025/06/cropped-header-1.jpg" width="1183" height="127">
 					</a>
 				</div>	<nav class="main-navigation mobile-menu-control-wrapper" id="mobile-menu-control-wrapper" aria-label="Mobile Toggle">
 				<button data-nav="site-navigation" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
@@ -217,7 +266,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>&nbsp;Стивен Р. Кови &nbsp; &nbsp;Стивен Р. Кови &nbsp; В современном мире эффективность людей и организаций превращается в обязательный фактор. Однако чтобы выживать, преуспевать, выделяться среди других и вести за собой в новой реальности, которую Стивен Кови называет новой эпохой работника интеллектуального труда, мы должны, опираясь на эффективность, двигаться за ее границы. Нынешняя новая эра истории &#8230; <a title="Восьмой навык. От эффективности к величию." class="read-more" href="https://lifebalance.ru/%d0%b2%d0%be%d1%81%d1%8c%d0%bc%d0%be%d0%b9-%d0%bd%d0%b0%d0%b2%d1%8b%d0%ba-%d0%be%d1%82-%d1%8d%d1%84%d1%84%d0%b5%d0%ba%d1%82%d0%b8%d0%b2%d0%bd%d0%be%d1%81%d1%82%d0%b8-%d0%ba-%d0%b2%d0%b5%d0%bb%d0%b8/" aria-label="Read more about Восьмой навык. От эффективности к величию.">Read more</a></p>
+				<p>&nbsp;Стивен Р. Кови &nbsp; &nbsp;Стивен Р. Кови &nbsp; В современном мире эффективность людей и организаций превращается в обязательный фактор. Однако чтобы выживать, преуспевать, выделяться среди других и вести за собой в новой реальности, которую Стивен Кови называет новой эпохой работника интеллектуального труда, мы должны, опираясь на эффективность, двигаться за ее границы. Нынешняя новая эра истории &#8230; <a title="Восьмой навык. От эффективности к величию." class="read-more" href="https://lifebalance.ru/%d0%b2%d0%be%d1%81%d1%8c%d0%bc%d0%be%d0%b9-%d0%bd%d0%b0%d0%b2%d1%8b%d0%ba-%d0%be%d1%82-%d1%8d%d1%84%d1%84%d0%b5%d0%ba%d1%82%d0%b8%d0%b2%d0%bd%d0%be%d1%81%d1%82%d0%b8-%d0%ba-%d0%b2%d0%b5%d0%bb%d0%b8/" aria-label="Read more about Восьмой навык. От эффективности к величию.">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -232,7 +281,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Стивен Р. Кови &nbsp; Стивен Р. Кови &nbsp; &nbsp;&nbsp;&nbsp;Перед вами уникальное издание, признанный &quot;международный бестселлер №1&quot;. Бывший президент США Билл Клинтон назвал &quot;Семь навыков&quot; настольной книгой каждого человека, стремящегося к успеху. Данная работа носит универсальный характер, поскольку основана на &quot;естественных законах&quot; &#8212; принципах и правилах, действующих всегда и везде. Прочитав ее, вы сможете значительно повысить &#8230; <a title="7 навыков высокоэффективных людей." class="read-more" href="https://lifebalance.ru/7-%d0%bd%d0%b0%d0%b2%d1%8b%d0%ba%d0%be%d0%b2-%d0%b2%d1%8b%d1%81%d0%be%d0%ba%d0%be%d1%8d%d1%84%d1%84%d0%b5%d0%ba%d1%82%d0%b8%d0%b2%d0%bd%d1%8b%d1%85-%d0%bb%d1%8e%d0%b4%d0%b5%d0%b9/" aria-label="Read more about 7 навыков высокоэффективных людей.">Read more</a></p>
+				<p>Стивен Р. Кови &nbsp; Стивен Р. Кови &nbsp; &nbsp;&nbsp;&nbsp;Перед вами уникальное издание, признанный &quot;международный бестселлер №1&quot;. Бывший президент США Билл Клинтон назвал &quot;Семь навыков&quot; настольной книгой каждого человека, стремящегося к успеху. Данная работа носит универсальный характер, поскольку основана на &quot;естественных законах&quot; &#8212; принципах и правилах, действующих всегда и везде. Прочитав ее, вы сможете значительно повысить &#8230; <a title="7 навыков высокоэффективных людей." class="read-more" href="https://lifebalance.ru/7-%d0%bd%d0%b0%d0%b2%d1%8b%d0%ba%d0%be%d0%b2-%d0%b2%d1%8b%d1%81%d0%be%d0%ba%d0%be%d1%8d%d1%84%d1%84%d0%b5%d0%ba%d1%82%d0%b8%d0%b2%d0%bd%d1%8b%d1%85-%d0%bb%d1%8e%d0%b4%d0%b5%d0%b9/" aria-label="Read more about 7 навыков высокоэффективных людей.">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -247,7 +296,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Стивен Р.Кови &quot;Коммерческий директор&quot;, май 2006(C) 2006, Copyright, VNU Business Media, Inc &nbsp; Вероятно, вы работаете почти круглосуточно, и ваша жизнь вовсе не похожа на фруктовый кефир. Как сохранить вдохновение, если черные полосы попадаются все чаще и чаще? Прочтите советы rypy в области мотивации Стивена Кови о том, как воодушевлять себя и своих подчиненных. Стивен &#8230; <a title="Зажгите в себе огонь" class="read-more" href="https://lifebalance.ru/%d0%b7%d0%b0%d0%b6%d0%b3%d0%b8%d1%82%d0%b5-%d0%b2-%d1%81%d0%b5%d0%b1%d0%b5-%d0%be%d0%b3%d0%be%d0%bd%d1%8c/" aria-label="Read more about Зажгите в себе огонь">Read more</a></p>
+				<p>Стивен Р.Кови &quot;Коммерческий директор&quot;, май 2006(C) 2006, Copyright, VNU Business Media, Inc &nbsp; Вероятно, вы работаете почти круглосуточно, и ваша жизнь вовсе не похожа на фруктовый кефир. Как сохранить вдохновение, если черные полосы попадаются все чаще и чаще? Прочтите советы rypy в области мотивации Стивена Кови о том, как воодушевлять себя и своих подчиненных. Стивен &#8230; <a title="Зажгите в себе огонь" class="read-more" href="https://lifebalance.ru/%d0%b7%d0%b0%d0%b6%d0%b3%d0%b8%d1%82%d0%b5-%d0%b2-%d1%81%d0%b5%d0%b1%d0%b5-%d0%be%d0%b3%d0%be%d0%bd%d1%8c/" aria-label="Read more about Зажгите в себе огонь">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -262,7 +311,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Предположим, вы директор по маркетингу крупной фармацевтической фирмы. Начинается ваш обычный рабочий день, и вы, просматривая перечень предстоящих дел, оцениваете, какое время займет каждое из них. Вот как выглядит список этих дел без определения приоритетов: Предположим, вы директор по маркетингу крупной фармацевтической фирмы. Начинается ваш обычный рабочий день, и вы, просматривая перечень предстоящих дел, оцениваете, &#8230; <a title="Рабочий день в квадранте II" class="read-more" href="https://lifebalance.ru/%d1%80%d0%b0%d0%b1%d0%be%d1%87%d0%b8%d0%b9-%d0%b4%d0%b5%d0%bd%d1%8c-%d0%b2-%d0%ba%d0%b2%d0%b0%d0%b4%d1%80%d0%b0%d0%bd%d1%82%d0%b5-ii/" aria-label="Read more about Рабочий день в квадранте II">Read more</a></p>
+				<p>Предположим, вы директор по маркетингу крупной фармацевтической фирмы. Начинается ваш обычный рабочий день, и вы, просматривая перечень предстоящих дел, оцениваете, какое время займет каждое из них. Вот как выглядит список этих дел без определения приоритетов: Предположим, вы директор по маркетингу крупной фармацевтической фирмы. Начинается ваш обычный рабочий день, и вы, просматривая перечень предстоящих дел, оцениваете, &#8230; <a title="Рабочий день в квадранте II" class="read-more" href="https://lifebalance.ru/%d1%80%d0%b0%d0%b1%d0%be%d1%87%d0%b8%d0%b9-%d0%b4%d0%b5%d0%bd%d1%8c-%d0%b2-%d0%ba%d0%b2%d0%b0%d0%b4%d1%80%d0%b0%d0%bd%d1%82%d0%b5-ii/" aria-label="Read more about Рабочий день в квадранте II">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -277,7 +326,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Стивен КовиЯнварь, 1994 Как-то у меня состоялся разговор с моей дочерью Марией, которая недавно родила третьего ребенка. Она сказала мне: &laquo;Я так расстроена, папа! Ты знаешь, как я люблю малыша, но он отнимает все мое время. Я просто не в состоянии заниматься ничем другим, в том числе теми многими делами, которые могу делать только я&raquo;. &#8230; <a title="Главное внимание главным вещам" class="read-more" href="https://lifebalance.ru/%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%be%d0%b5-%d0%b2%d0%bd%d0%b8%d0%bc%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d1%8b%d0%bc-%d0%b2%d0%b5%d1%89%d0%b0%d0%bc/" aria-label="Read more about Главное внимание главным вещам">Read more</a></p>
+				<p>Стивен КовиЯнварь, 1994 Как-то у меня состоялся разговор с моей дочерью Марией, которая недавно родила третьего ребенка. Она сказала мне: &laquo;Я так расстроена, папа! Ты знаешь, как я люблю малыша, но он отнимает все мое время. Я просто не в состоянии заниматься ничем другим, в том числе теми многими делами, которые могу делать только я&raquo;. &#8230; <a title="Главное внимание главным вещам" class="read-more" href="https://lifebalance.ru/%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d0%be%d0%b5-%d0%b2%d0%bd%d0%b8%d0%bc%d0%b0%d0%bd%d0%b8%d0%b5-%d0%b3%d0%bb%d0%b0%d0%b2%d0%bd%d1%8b%d0%bc-%d0%b2%d0%b5%d1%89%d0%b0%d0%bc/" aria-label="Read more about Главное внимание главным вещам">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -292,7 +341,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Возвращаясь к семи привычкам высокоэффективных людей, давайте выделим уникальные человеческие дарования, соответствующие каждой из этих привычек. С привычками 1, 2 и 3 связаны первичные человеческие дарования. Когда они используются человеком во всей своей полноте, реализация привычек 4, 5 и 6 позволяет обрести вторичные дарования. А способность, связанная с привычкой 7, позволяет обновлять процесс роста и &#8230; <a title="Возвращаясь к семи привычкам" class="read-more" href="https://lifebalance.ru/%d0%b2%d0%be%d0%b7%d0%b2%d1%80%d0%b0%d1%89%d0%b0%d1%8f%d1%81%d1%8c-%d0%ba-%d1%81%d0%b5%d0%bc%d0%b8-%d0%bf%d1%80%d0%b8%d0%b2%d1%8b%d1%87%d0%ba%d0%b0%d0%bc/" aria-label="Read more about Возвращаясь к семи привычкам">Read more</a></p>
+				<p>Возвращаясь к семи привычкам высокоэффективных людей, давайте выделим уникальные человеческие дарования, соответствующие каждой из этих привычек. С привычками 1, 2 и 3 связаны первичные человеческие дарования. Когда они используются человеком во всей своей полноте, реализация привычек 4, 5 и 6 позволяет обрести вторичные дарования. А способность, связанная с привычкой 7, позволяет обновлять процесс роста и &#8230; <a title="Возвращаясь к семи привычкам" class="read-more" href="https://lifebalance.ru/%d0%b2%d0%be%d0%b7%d0%b2%d1%80%d0%b0%d1%89%d0%b0%d1%8f%d1%81%d1%8c-%d0%ba-%d1%81%d0%b5%d0%bc%d0%b8-%d0%bf%d1%80%d0%b8%d0%b2%d1%8b%d1%87%d0%ba%d0%b0%d0%bc/" aria-label="Read more about Возвращаясь к семи привычкам">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -307,7 +356,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Семь навыков высокоэффективных людей. Мощные инструменты развития личности (англ. The 7 Habits of Highly Effective People: Restoring the Character Ethic) &mdash; книга Стивена Р. Кови, вышедшая в 1989 году. В 2004 году, спустя 15 лет с выпуска первого издания было продано более 15 миллионов экземпляров и переведено более чем на 38 языков. В августе 2011 &#8230; <a title="Семь навыков высокоэффективных людей" class="read-more" href="https://lifebalance.ru/%d1%81%d0%b5%d0%bc%d1%8c-%d0%bd%d0%b0%d0%b2%d1%8b%d0%ba%d0%be%d0%b2-%d0%b2%d1%8b%d1%81%d0%be%d0%ba%d0%be%d1%8d%d1%84%d1%84%d0%b5%d0%ba%d1%82%d0%b8%d0%b2%d0%bd%d1%8b%d1%85-%d0%bb%d1%8e%d0%b4%d0%b5/" aria-label="Read more about Семь навыков высокоэффективных людей">Read more</a></p>
+				<p>Семь навыков высокоэффективных людей. Мощные инструменты развития личности (англ. The 7 Habits of Highly Effective People: Restoring the Character Ethic) &mdash; книга Стивена Р. Кови, вышедшая в 1989 году. В 2004 году, спустя 15 лет с выпуска первого издания было продано более 15 миллионов экземпляров и переведено более чем на 38 языков. В августе 2011 &#8230; <a title="Семь навыков высокоэффективных людей" class="read-more" href="https://lifebalance.ru/%d1%81%d0%b5%d0%bc%d1%8c-%d0%bd%d0%b0%d0%b2%d1%8b%d0%ba%d0%be%d0%b2-%d0%b2%d1%8b%d1%81%d0%be%d0%ba%d0%be%d1%8d%d1%84%d1%84%d0%b5%d0%ba%d1%82%d0%b8%d0%b2%d0%bd%d1%8b%d1%85-%d0%bb%d1%8e%d0%b4%d0%b5/" aria-label="Read more about Семь навыков высокоэффективных людей">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -322,7 +371,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 					</header>
 			
 			<div class="entry-summary" itemprop="text">
-				<p>Читая знаменитую книгу Стивена Кови &laquo;7 навыков высокоэффективных людей, все время натыкаешься на примеры из его личной жизни. В каждой ситуации он предстает исключительным праведником, который заботится не только о семье, но и о цивилизации. В его книгах, поговорив друг с другом дольше обычного, люди обязательно приходят к согласию и продолжают жить не корысти ради, &#8230; <a title="Агент перемен" class="read-more" href="https://lifebalance.ru/%d0%b0%d0%b3%d0%b5%d0%bd%d1%82-%d0%bf%d0%b5%d1%80%d0%b5%d0%bc%d0%b5%d0%bd/" aria-label="Read more about Агент перемен">Read more</a></p>
+				<p>Читая знаменитую книгу Стивена Кови &laquo;7 навыков высокоэффективных людей, все время натыкаешься на примеры из его личной жизни. В каждой ситуации он предстает исключительным праведником, который заботится не только о семье, но и о цивилизации. В его книгах, поговорив друг с другом дольше обычного, люди обязательно приходят к согласию и продолжают жить не корысти ради, &#8230; <a title="Агент перемен" class="read-more" href="https://lifebalance.ru/%d0%b0%d0%b3%d0%b5%d0%bd%d1%82-%d0%bf%d0%b5%d1%80%d0%b5%d0%bc%d0%b5%d0%bd/" aria-label="Read more about Агент перемен">Читать дальше</a></p>
 			</div>
 
 				<footer class="entry-meta" aria-label="Entry meta">
@@ -334,7 +383,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 
 	<div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
 	<div class="inside-right-sidebar">
-		<aside id="block-3" class="widget inner-padding widget_block">
+		<aside id="custom_html-3" class="widget_text widget inner-padding widget_custom_html"><div class="textwidget custom-html-widget"><div class="social-widget">
+<a href="https://dzen.ru/lifebalance_ru" target="_blank" rel="noopener" title="Дзен">
+    <img src="https://dzen.ru/about/images/download//dzen-dark/dark-basic.svg" style="width:64px; height:64px; vertical-align:middle;"></a>
+	<a href="https://t.me/lifebalanceru" target="_blank" rel="noopener" title="Telegram">
+    <img src="https://lifebalance.ru/wp-content/uploads/2025/06/Telegram.png" alt="Telegram" style="width:63px; height:24px; vertical-align:middle;"></a>
+</div></div></aside><aside id="block-3" class="widget inner-padding widget_block">
 <div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
 <h2 class="wp-block-heading">Свежие записи</h2>
 
